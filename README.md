@@ -1,27 +1,149 @@
-# Byte
+# 💰 Sistema de Préstamos — Angular CLI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+Aplicación web desarrollada con **Angular CLI** para la gestión de préstamos, clientes y pagos, diseñada para facilitar el control financiero y la administración de créditos de manera eficiente.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Descripción
 
-## Code scaffolding
+El **Sistema de Préstamos** es una aplicación frontend que permite gestionar operaciones relacionadas con créditos, incluyendo registro de clientes, creación de préstamos, seguimiento de pagos y visualización de reportes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Está orientado a pequeñas y medianas empresas que necesitan una solución ágil para el control de financiamiento.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 🎯 Características principales
 
-## Running unit tests
+* 👤 **Gestión de clientes**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  * Registro y edición de datos
+  * Historial de préstamos
 
-## Running end-to-end tests
+* 💳 **Gestión de préstamos**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+  * Creación de préstamos
+  * Configuración de monto, interés y plazo
+  * Cálculo automático de cuotas
 
-## Further help
+* 📆 **Control de pagos**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  * Registro de pagos realizados
+  * Seguimiento de pagos pendientes
+  * Estado del préstamo (activo, pagado, vencido)
+
+* 📊 **Dashboard**
+
+  * Resumen de préstamos activos
+  * Estadísticas de ingresos
+  * Visualización de datos clave
+
+* 🔐 **Autenticación**
+
+  * Inicio de sesión
+  * Control de acceso por usuario
+
+* 📱 **Diseño responsivo**
+
+  * Compatible con móviles, tablets y escritorio
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+* ⚡ **Angular CLI**
+* 🟦 TypeScript
+* 🎨 HTML5 & CSS3
+* 🔄 RxJS
+* 🌐 Consumo de APIs REST
+
+---
+
+## 📂 Estructura del proyecto
+
+```bash id="k9x3op"
+src/
+│
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── models/
+│   ├── pages/
+│   └── app-routing.module.ts
+│
+├── assets/
+├── environments/
+└── index.html
+```
+
+---
+
+## ⚙️ Instalación
+
+1. Clonar el repositorio:
+
+```bash id="r2m8vz"
+git clone https://github.com/TU-USUARIO/sistema-prestamos-angular.git
+```
+
+2. Acceder al proyecto:
+
+```bash id="q7d1hj"
+cd sistema-prestamos-angular
+```
+
+3. Instalar dependencias:
+
+```bash id="m5p2tx"
+npm install
+```
+
+4. Ejecutar la aplicación:
+
+```bash id="z8n4ka"
+ng serve
+```
+
+5. Abrir en el navegador:
+
+```bash id="t6c9lw"
+http://localhost:4200/
+```
+
+---
+
+## 🧪 Uso del sistema
+
+1. Iniciar sesión en la aplicación
+2. Registrar clientes
+3. Crear nuevos préstamos
+4. Gestionar pagos y cuotas
+5. Visualizar reportes y estado financiero
+
+---
+
+## 📈 Objetivo del proyecto
+
+Brindar una herramienta moderna y eficiente para el control de préstamos, facilitando la administración de clientes y mejorando la toma de decisiones financieras.
+
+---
+
+## 🔮 Mejoras futuras
+
+* Integración con backend (Node.js / Laravel / Spring Boot)
+* Generación de reportes PDF
+* Notificaciones automáticas de pagos
+* Sistema de alertas para préstamos vencidos
+* Gráficas avanzadas
+
+---
+
+## 👨‍💻 Autor
+
+**Isai Reyes**
+Desarrollador enfocado en sistemas empresariales, frontend moderno y soluciones escalables 🚀
+
+---
+
+## 📜 Licencia
+
+Licencia MIT.
