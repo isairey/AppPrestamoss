@@ -82,13 +82,13 @@ src/
 1. Clonar el repositorio:
 
 ```bash id="r2m8vz"
-git clone https://github.com/TU-USUARIO/sistema-prestamos-angular.git
+git clone https://github.com/isairey/AppPrestamoss.git
 ```
 
 2. Acceder al proyecto:
 
 ```bash id="q7d1hj"
-cd sistema-prestamos-angular
+cd AppPrestamoss
 ```
 
 3. Instalar dependencias:
