@@ -1,0 +1,45 @@
+<mat-card class="centro">
+        <mat-card-title>Nuevo</mat-card-title>
+</mat-card>
+
+<form>
+<table class="centroTabla">
+<tr>
+<td><h4>El tipo de feriado es variado:  </h4></td>
+<td>
+        <mat-checkbox value="S" [(ngModel)]="checked3" [(ngModel)]="data.tipoFeriado"
+        [ngModelOptions]="{standalone: true}">Variado</mat-checkbox>
+        
+</td>
+</tr>
+
+<tr>
+<td>
+    <h4>Fecha:</h4></td>
+<td>
+        <mat-form-field>
+                <input matInput [(ngModel)]="data.fechaFeriado"
+                [ngModelOptions]="{standalone: true}" [matDatepicker]="picker" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+</td>
+</tr>
+<tr>
+        <td><h4>Descripcion:  </h4></td>
+        <td>
+        <mat-form-field>
+                <input matInput placeholder="Introduce la Descripcion" [(ngModel)]="data.descripcion"
+                [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+        </td>
+        </tr>
+     
+
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+         <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+       </form>

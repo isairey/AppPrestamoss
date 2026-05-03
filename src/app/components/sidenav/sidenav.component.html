@@ -1,0 +1,40 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" > 
+        <mat-toolbar class="example-toolbar" style="background: #273746" color="primary">
+            <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+            SCEF
+          </mat-toolbar>     
+      <mat-sidenav-container class="example-sidenav-container"
+                             [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                     [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" [(opened)]="opened" (opened)="events.push('open!')"
+                     (closed)="events.push('close!')">   
+        <div class="example-form">
+            <mat-form-field style="width: 400px" appearance="fill">
+                <mat-label>BUSCADOR</mat-label>              
+                <input  matInput  (keyup)="applyFilter($event.target.value)">                                               
+            </mat-form-field>            
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>                                                                                        
+        </div>  
+      
+      <table mat-table [dataSource]="dataSource" style="margin-top: -80px; width: 400px">
+      
+              <!-- Name Column -->
+              <ng-container matColumnDef="descripcion">
+                      <th mat-header-cell *matHeaderCellDef style="display: none;margin: 0;padding: 0"> Descripcion </th>
+                      <td mat-cell *matCellDef="let element" id="desc"><mat-icon mat-list-icon>folder</mat-icon>
+                              <a routerLink={{element.enlace}}>{{element.descripcion}} </a></td>
+              </ng-container>
+      
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+              </tr>
+      </table>
+        </mat-sidenav>
+      
+        <mat-sidenav-content>           
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+      </div>

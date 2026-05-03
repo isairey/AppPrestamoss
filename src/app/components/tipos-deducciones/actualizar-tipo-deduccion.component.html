@@ -1,0 +1,16 @@
+
+  <mat-toolbar>Actualizar</mat-toolbar>
+<form>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Codigo ">
+          </mat-form-field>
+          <br>
+          <br>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Descripcion">
+          </mat-form-field>
+          <br>
+          <br>
+      <button mat-button (click)="onNoClick()">Cancelar</button>
+      <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+    </form>

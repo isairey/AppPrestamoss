@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet');
+
+.letra{
+  font-family: 'Raleway', sans-serif;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.color{
+  background: #273746;
+  color: white;
+  height: 80px;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.dialog{
+  background: #273746;
+  color: white;
+  
+}
+
+.example-full-width {
+  width: 100%;
+    
+}
+
+
+.centro{
+    text-align: center;
+    color: beige;
+}
+
+#iconos1{
+    margin-left: 90%;
+    height: 70%;
+    bottom: 0;
+  
+  display:scroll;
+  position:fixed;
+  right:0px;
+  }
+
+  .centroTabla {
+    margin: auto;
+    width: 60%;
+  }
+
+.busqueda {
+  margin: auto;
+}
+
+.capa1{ position: fixed;
+  text-align: center;
+  top:50%;
+  left:45%;
+
+ }
+ .abajo{
+    
+    height: 70%;
+    bottom: 0;
+  
+}
+ .posicionFija{
+  bottom: 0;
+  left: 0;
+  display:scroll;
+  position:fixed;
+  right:0px;
+  }

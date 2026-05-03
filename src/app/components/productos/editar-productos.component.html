@@ -1,0 +1,9 @@
+<form>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Descripcion del producto">
+    </mat-form-field>
+    <br>
+    <br>
+<button mat-button (click)="onNoClick()">Cancel</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Editar</button>
+</form>

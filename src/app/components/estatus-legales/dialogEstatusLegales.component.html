@@ -1,0 +1,65 @@
+<form>
+
+  <mat-card id="arriba">BANCO DE PRUEBA BYTE</mat-card>
+
+  <h1 id="Titulo">Mantenimiento Status Legales</h1>
+
+  <br>
+  <h3>ALTAS</h3>
+
+  <h5>Codigo Sta.Legales</h5>
+
+  <mat-form-field class="InputN">
+    <input matInput>
+  </mat-form-field>
+  <br>
+  <h5>Nombre Sta.Legales</h5>
+
+  <mat-form-field class="InputN">
+    <input matInput>
+  </mat-form-field>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  <br>
+  <br>
+  <br>
+  <div id="iconos3">
+
+      <button  mat-icon-button style=" background: #5F6A6A; margin-left: 12px"  >
+          <mat-icon id="back">arrow_back</mat-icon>
+        </button>
+        <button mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="door">meeting_room</mat-icon>
+        </button>
+        <button mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="arrow_left">subdirectory_arrow_left</mat-icon>
+        </button>
+        <button  mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="add"  >note_add</mat-icon>
+        </button>
+        <button mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="table2">table_chart</mat-icon>
+        </button>
+        <button mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="table2">table_chart_outline</mat-icon>
+        </button>
+        <button mat-icon-button style=" background: #5F6A6A; margin-left: 12px" >
+          <mat-icon id="table2">help</mat-icon>
+        </button>
+
+    
+
+
+
+
+  </div>
+</form>

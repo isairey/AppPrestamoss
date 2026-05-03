@@ -1,0 +1,40 @@
+<mat-toolbar class="dialog">Altas</mat-toolbar>
+
+<form>
+
+<table style="margin: auto;" class="letra">
+        <tr>
+    <td><h4>Producto:  </h4></td>
+    <td>
+         <mat-form-field>
+             <input matInput placeholder="Input">
+        </mat-form-field>
+    </td>
+    </tr> 
+    <tr>
+        <td><h4>Tipo de información:  </h4></td>
+    <td>
+        <mat-form-field>
+            <input matInput placeholder="Input">
+        </mat-form-field>
+    </td>
+</tr>   
+<tr>
+        <td><h4>Excluye convenio:  </h4></td>
+        <td>
+                <mat-checkbox>Si</mat-checkbox>
+        </td>
+        </tr>      
+<tr>
+<td><h4>Obligatorio por aprobar:  </h4></td>
+<td>
+        <mat-checkbox>Si</mat-checkbox>
+</td>
+</tr>
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button class="abajo" mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+</form>

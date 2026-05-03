@@ -1,0 +1,94 @@
+<body  class="example-ripple-container"
+matRipple
+[matRippleCentered]="centered"
+[matRippleDisabled]="disabled"
+[matRippleUnbounded]="unbounded"
+[matRippleRadius]="35"
+[matRippleColor]="color">
+
+<!-- <mat-toolbar style="cursor:pointer;" onClick="history.back()" class="encabezado" class="color" >Parametros por producto</mat-toolbar> -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+  <br>
+<table class="busqueda">
+    <tr>
+      <td><h4 class="letra" >Buscar:  </h4></td>
+      <td>
+          <p>
+              <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                  <select matNativeControl required>
+                      <option value="volvo">Producto1</option>
+              <option value="saab">Producto2</option>
+              <option value="saab">Producto3</option>
+              <option value="saab">Producto4</option>
+              </select>
+                <mat-icon  matSuffix>search</mat-icon>
+              </mat-form-field>
+            </p>
+      </td>
+    </tr>
+    <mat-spinner class="capa1" *ngIf="mostrar"></mat-spinner>
+  </table > 
+
+  <table class="busqueda">
+      <tr>
+        <td><h4 class="letra" >Opción:  </h4></td>
+        <td>
+            <p>
+                <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                    <select matNativeControl required>
+                        <option value="volvo">1. Eventos de solicitudes</option>
+                <option value="saab">2. Documentos a presentar por Producto</option>
+                <option value="saab">3. Montos por Plazo</option>
+                <option value="saab">4. Porcentajes de financiamiento</option>
+                <option value="saab">5. Rango de plazos por interes</option>
+                </select>
+                  
+                </mat-form-field>
+              </p>
+        </td>
+      </tr>
+      
+    </table > 
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="centro">
+  
+ 
+    <button title="Agregar registro" mat-icon-button style=" background: #5F6A6A; margin-left: 12px"  (click)='startTimer()' >
+        <mat-icon>note_add</mat-icon>
+    </button>
+    <button title="Eliminar registro" mat-icon-button style=" background: #5F6A6A; margin-left: 12px">
+        <mat-icon>delete_sweep</mat-icon>
+    </button>
+    <button title="Editar registro" mat-icon-button style=" background: #5F6A6A; margin-left: 12px">
+        <mat-icon>create</mat-icon>
+    </button>
+    
+  
+  </div>
+<br>
+<br>
+<form>
+  <button class="posicionFija" style=" background: #5F6A6A;margin-left: 95%; color: beige;" title="Ayuda" mat-icon-button >
+    <mat-icon>help</mat-icon>
+</button>
+</form>
+  <!-- <button (click)='startTimer()'>Start Timer</button>
+  <button (click)='pauseTimer()'>Pause</button>
+  
+  <p>{{timeLeft}} Seconds Left....</p>  -->
+
+  </body>

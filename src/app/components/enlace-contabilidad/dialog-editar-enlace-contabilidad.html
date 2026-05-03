@@ -1,0 +1,129 @@
+<mat-card-title>Editar Empresa</mat-card-title>
+<table class="table">
+    <tr>
+        <td>
+            <h4>Contabilidad activa</h4>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <h5>Pais</h5>
+        <mat-form-field>
+            <mat-label>Pais</mat-label>
+            <mat-select  required>
+            <mat-option>Guatemala</mat-option>
+            <mat-option>Panama</mat-option>
+            <mat-option>El Salvador</mat-option>
+            <mat-option>Colombia</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja un Pais</mat-error>
+            <mat-hint></mat-hint>
+        </mat-form-field>
+    </td>
+    <td>
+        <h5>Empresa</h5>
+        <mat-form-field>
+            <mat-label>Empresa</mat-label>
+            <mat-select required>
+            <mat-option>Tigo</mat-option>
+            <mat-option>Claro</mat-option>
+            <mat-option>Telcel</mat-option>
+            <mat-option>Telefonica</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja una empresa</mat-error>
+            <mat-hint></mat-hint>
+        </mat-form-field>
+    </td>
+    <td>
+        <h5>Departamento</h5>
+        <mat-form-field>
+            <mat-label>Departamento</mat-label>
+            <mat-select  required>
+            <mat-option>Guatemala</mat-option>
+            <mat-option>Departamento 2</mat-option>
+            <mat-option>Departamento 3</mat-option>
+            <mat-option>Departamento 4</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja un Departamento</mat-error>
+            <mat-hint></mat-hint>
+        </mat-form-field>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>Generacion de cheques</h4>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h5>Departamento solicitante</h5>
+            <mat-form-field>
+            <mat-label>Depto.</mat-label>
+            <mat-select  required>
+                <mat-option>Guatemala</mat-option>
+                <mat-option>Panama</mat-option>
+                <mat-option>El Salvador</mat-option>
+                <mat-option>Colombia</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja un Pais</mat-error>
+            <mat-hint></mat-hint>
+            </mat-form-field>
+        </td>
+        <td>
+            <h5>Banco del sistema</h5>
+            <mat-form-field>
+            <mat-label>Banco</mat-label>
+            <mat-select  required>
+                <mat-option>Banco 1</mat-option>
+                <mat-option>Banco 2</mat-option>
+                <mat-option>Banco 3</mat-option>
+                <mat-option>Banco 4</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja un banco</mat-error>
+            <mat-hint></mat-hint>
+            </mat-form-field>
+            <h5>Cuenta de banco</h5>
+            <mat-form-field>
+            <mat-label>Cuenta</mat-label>
+            <mat-select  required>
+                <mat-option>Cuenta 1</mat-option>
+                <mat-option>Cuenta 2</mat-option>
+                <mat-option>Cuenta 3</mat-option>
+                <mat-option>Cuenta 4</mat-option>
+            </mat-select>
+            <mat-error>Por favor escoja un Banco</mat-error>
+            <mat-hint></mat-hint>
+            </mat-form-field>
+        </td>
+        <td>
+            <h5>Tipo de Documento</h5>
+            <mat-form-field>
+                <mat-label>Documento</mat-label>
+                <mat-select  required>
+                <mat-option>Documento 1</mat-option>
+                <mat-option>Documento 2</mat-option>
+                <mat-option>Documento 3</mat-option>
+                <mat-option>Documento 4</mat-option>
+                </mat-select>
+                <mat-error>Por favor escoja un Documento</mat-error>
+                <mat-hint></mat-hint>
+            </mat-form-field>
+            <h5>Codigo Proveedor</h5>
+            <mat-form-field>
+                <mat-label>Proveedor</mat-label>
+                <mat-select  required>
+                <mat-option>Proveedor 1</mat-option>
+                <mat-option>Proveedor 2</mat-option>
+                <mat-option>Proveedor 3</mat-option>
+                <mat-option>Proveedor 4</mat-option>
+                </mat-select>
+                <mat-error>Por favor escoja un Banco</mat-error>
+                <mat-hint></mat-hint>
+            </mat-form-field>
+        </td>
+</tr>
+</table>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

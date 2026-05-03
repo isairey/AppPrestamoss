@@ -1,0 +1,15 @@
+<mat-card class="centro"><mat-card-title>Editar</mat-card-title></mat-card>
+<form>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Codigo Empleado">
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Nombre Empleado">
+      </mat-form-field>
+      <br>
+      <br>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</form>

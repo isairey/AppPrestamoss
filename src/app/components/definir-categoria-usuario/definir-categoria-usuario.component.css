@@ -1,0 +1,33 @@
+form{
+    margin: 0 auto;
+    text-align: center;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+
+.buttons{
+    margin: 0 auto; 
+    width: 300px;
+    padding: 25px 0;
+}
+
+.a{
+    margin: 5px; 
+} 
+.mat-elevation-z8 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.opciones{
+    text-align: center; 
+}
+
+#buscador{
+    text-align: center;
+}
+
+.encabezado{
+    background: #273746
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>        
+        <div mat-dialog-content>
+            <mat-toolbar class="encabezado" color="primary"> Editar Ingenieros Valuadores</mat-toolbar>
+            <br>
+            <mat-form-field>
+                <input color="primary" matInput placeholder="Codigo">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input color="primary" matInput placeholder="Nombre">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input color="primary" matInput placeholder="Registro">
+            </mat-form-field>
+          </div>
+        
+          <div mat-dialog-actions>
+            <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+            <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Editar</button>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+
+
+.letra{
+  font-family: 'Raleway', sans-serif;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center
+}
+
+.color{
+  background: #273746;
+  color: white;
+  height: 80px;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+
+.example-full-width {
+  width: 100%;
+    
+}
+
+
+.centro{
+    text-align: center;    
+}
+
+
+
+.busqueda {
+  margin: auto;
+}
+
+.capa1{ position: fixed;
+  text-align: center;
+  top:50%;
+  left:45%;
+
+ }
+
+ .posicionFija{
+  bottom: 0;
+  left: 0;
+  display:scroll;
+  position:fixed;
+  right:0px;
+  }
+
+  .buttons{
+    margin: 0 auto; 
+    width: 300px;
+    padding: 25px 0;
+    text-align: center
+  }

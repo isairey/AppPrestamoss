@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="encabezado">Editar Motivo de Reserva</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>
+    <mat-form-field>
+        <input class="inputAgregar"  matInput placeholder="Motivo">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar"  matInput placeholder="Descripcion">
+    </mat-form-field>
+    <br>
+    Cargo Automatico: <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">S</mat-radio-button>
+        <mat-radio-button value="2">N</mat-radio-button>
+    </mat-radio-group>
+    <br>
+    <button style="width: 10px; height: 25px"> </button>
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Retención cargo">
+    </mat-form-field><br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Institución">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <textarea class="inputAgregar"  matInput placeholder="Referencias" style="width: 200px"></textarea>
+    </mat-form-field>
+    <br>    
+  </div>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Editar</button>
+  </div>

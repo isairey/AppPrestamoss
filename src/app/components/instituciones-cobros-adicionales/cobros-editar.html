@@ -1,0 +1,23 @@
+<form  class="form" action="">
+    <p>
+            
+              <label>Cambios</label>
+            
+          </p>
+          <p>
+              <mat-form-field class="example-full-width">                  
+                  <input matInput placeholder="ID" [(ngModel)]="data.codigo"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field><br>
+            <mat-form-field appearance="legacy">
+              <mat-label>Descripcion</mat-label>
+              <input matInput placeholder="Descripcion" [(ngModel)]="data.descripcion"
+              [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </p>          
+          <br>
+        <div class="example-button-row">
+            <button mat-button [mat-dialog-close]="">Cancelar</button>
+            <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+        </div>
+         </form>

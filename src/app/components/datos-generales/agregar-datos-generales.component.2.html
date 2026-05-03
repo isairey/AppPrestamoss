@@ -1,0 +1,19 @@
+
+  <mat-card class="centro"><mat-card-title>Configuracion del sistema</mat-card-title></mat-card>
+<br>
+<br>
+
+<form>
+    <br>
+    Proceso de Fecha valor<br>
+    <mat-form-field>
+        <input matInput [matDatepicker]="pickerFechaInicio" placeholder="Fecha inicio gestion">
+        <mat-datepicker-toggle matSuffix [for]="pickerFechaInicio"></mat-datepicker-toggle>
+        <mat-datepicker #pickerFechaInicio></mat-datepicker>
+      </mat-form-field>
+ 
+        </form> 
+<br>
+
+<button mat-button (click)="onNoClick()">No Thanks</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>

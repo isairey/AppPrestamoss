@@ -1,0 +1,19 @@
+<mat-card class="centro">
+  <mat-card-title>Nuevo</mat-card-title>
+</mat-card>
+<form class="example-form">
+  <div mat-dialog-content>
+    <mat-form-field>
+        <input class="inputAgregar" matInput placeholder="Codigo categoria" [(ngModel)]="data.codigo" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar" matInput placeholder="Descripcion categoria" [(ngModel)]="data.descripcion" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  </div>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="">Cancelar</button>
+    <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+  </div>

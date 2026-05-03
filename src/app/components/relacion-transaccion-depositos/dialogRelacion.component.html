@@ -1,0 +1,37 @@
+<h1>Mante a Parametros de Transaccion</h1>
+
+<form id="form1">
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Producto">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Codigo Moneda">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar"  matInput placeholder="Trans. Equivalente">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar"  matInput placeholder="Descripcion">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Codigo Transaccion">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Codigo Motivo">
+    </mat-form-field>
+    <br>
+  </form>
+  <hr>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-button [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

@@ -1,0 +1,32 @@
+.form {
+    max-width: auto;
+    align-self: auto;
+    text-align: center;
+  }
+  .mat-elevation-z8 {
+    width: 40%;
+    margin-left: 30%
+  }
+  .table2{
+    width: 70%;
+    margin-left: 20%
+  }
+  .buttons{
+    text-align: center;
+
+  }
+  .button2{
+    margin-left: 30%;
+  }
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+body{
+  padding-top: 50%;
+  margin-top: 15%
+}
+
+.encabezado{
+  background: #273746
+}

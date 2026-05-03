@@ -1,0 +1,81 @@
+<mat-toolbar class="dialog">Porcentaje De Reserva</mat-toolbar>
+
+<form>
+<table style="margin: auto;" class="letra">
+<tr>
+<td><h4>Tipo de producto:  </h4></td>
+<td>
+<mat-form-field>
+    <input matInput placeholder="Ingrese el tipo">
+    </mat-form-field>
+</td>
+</tr>
+<tr>
+<td><h4>Categoria:  </h4></td>
+<td>
+<mat-form-field>
+<input matInput placeholder="Ingrese la categoria">
+</mat-form-field>
+</td>
+</tr>
+<tr>
+    <td><h4>Días de atraso:</h4></td>
+<tr>
+<td><h4>Días de inicio:</h4></td>
+<td>
+<mat-form-field>
+    <input matInput placeholder="Cantidad de días">
+    </mat-form-field>
+</td>
+</tr>
+<tr>
+    <td><h4>Días final:</h4></td>
+    <td>
+    <mat-form-field>
+        <input matInput placeholder="Cantidad de días">
+        </mat-form-field>
+    </td>
+</tr>
+
+<tr>
+<td><h4>Porcentaje de reserva:  </h4></td>
+<td>
+<mat-form-field>
+    <input matInput placeholder="Cantidad">
+    </mat-form-field>
+</td>
+</tr>
+<tr>
+    <td><h4>Perdida estimada:</h4></td>
+</tr>       
+<tr>
+<td><h4>Rango inicial:  </h4></td>
+<td>
+<mat-form-field>
+        <input matInput placeholder="Cantidad">
+        </mat-form-field>
+</td>
+</tr>
+<tr>
+<td><h4>Rango final:  </h4></td>
+<td>
+    <mat-form-field>
+        <input matInput placeholder="Cantidad">
+    </mat-form-field>
+</td>
+</tr>
+<tr>
+<td><h4>Categoria de la  super:  </h4></td>
+<td>
+    <mat-form-field>
+        <input matInput placeholder="Ingrese la categoria">
+    </mat-form-field>
+</td>
+</tr>
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+</form>

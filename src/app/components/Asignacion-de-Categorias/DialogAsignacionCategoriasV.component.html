@@ -1,0 +1,27 @@
+<h1 id="Titulo">Mantenimiento A Autorizaciones Por Tipo de Producto</h1>
+
+<mat-form-field>
+  <input class="inputAgregar" readonly matInput placeholder="Usuario">
+</mat-form-field><br>
+<mat-form-field>
+  <input class="inputAgregar" readonly matInput placeholder="Categoria">
+</mat-form-field><br>
+<mat-form-field>
+  <input class="inputAgregar" readonly matInput placeholder="Agencia">
+</mat-form-field>
+<br>
+<br>
+<form>  
+
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Tipo Prodcto">
+    </mat-form-field>
+    <br>
+    <br>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  </form>
+  
+  
+  

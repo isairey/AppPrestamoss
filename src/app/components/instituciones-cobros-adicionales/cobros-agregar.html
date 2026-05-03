@@ -1,0 +1,27 @@
+<mat-card class="centro">
+  <mat-card-title>Nuevo</mat-card-title>
+</mat-card>
+<form  class="form" action="">
+          <p>
+              <mat-form-field class="example-full-width">                  
+                  <input matInput placeholder="ID" [(ngModel)]="data.codigo"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field><br>
+            <mat-form-field appearance="legacy">
+              <mat-label>Descripcion</mat-label>
+              <input matInput placeholder="Descripcion" [(ngModel)]="data.descripcion"
+              [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </p>
+          <div class="">
+              <!-- <mat-icon>done_outline</mat-icon>
+              <mat-icon>build</mat-icon>
+              <mat-icon>delete</mat-icon>
+              <mat-icon>aspect_ratio</mat-icon> -->
+          </div>
+          <br>
+        <div class="example-button-row">
+            <button mat-button [mat-dialog-close]="">Cancelar</button>
+            <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+        </div>
+         </form>

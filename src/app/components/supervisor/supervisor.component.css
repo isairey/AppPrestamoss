@@ -1,0 +1,32 @@
+.Card{
+text-align: center;
+font-family: 'Times New Roman';
+}
+
+.example-form {
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    left: 40%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+
+  mat-card mat-card-title{
+    text-align: center;
+  }
+  .buttons{
+    margin: 0 auto; 
+    width: 300px;
+    padding: 25px 0;
+    text-align: center
+  }
+  
+  .a{
+    margin: 5px; 
+  }
+  

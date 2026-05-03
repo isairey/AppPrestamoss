@@ -1,0 +1,26 @@
+<mat-card class="centro">
+  <mat-card-title>Cambios </mat-card-title>
+</mat-card>
+<br>
+<br>
+<form>
+  <table class="centro">
+
+    <p>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Introduce el Codigo" [(ngModel)]="data.codigoInstancia"
+          [ngModelOptions]="{standalone: true}" readonly>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Descripcion" [(ngModel)]="data.descripcion"
+          [ngModelOptions]="{standalone: true}"></textarea>
+      </mat-form-field>
+    </p>
+
+  </table>
+  <br>
+
+  <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Editar</button>
+</form>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Relación Transacciones Depósitos</title>
+  <link rel="stylesheet" type="text/css" href="">
+  <meta name="viewport"
+    content="width-device-width, user-scalable-no, initial-scale-1.0, maximum-scale-1.0,minimum-scale-1.0">
+
+</head>
+
+<body>
+  <div class="contenedor">
+    <mat-card id="arriba">BANCO DE PRUEBA BYTE</mat-card>
+    <div>
+      <h5 id="Titulo">Mantenimiento A Tipos De Canales De Distribución</h5>
+    </div>
+
+    <div id="iconos1">
+      <ul>
+        <ol>
+          <button mat-icon-button>
+            <mat-icon id="delete">edit</mat-icon>
+          </button>
+        </ol>
+        <ol>
+          <button mat-icon-button>
+            <mat-icon id="delete">delete</mat-icon>
+          </button>
+        </ol>
+        <ol>
+          <button mat-icon-button>
+            <mat-icon id="delete">search</mat-icon>
+          </button>
+        </ol>
+      </ul>
+    </div>
+
+
+    <div class="a1">
+        <mat-form-field appearance="outline" class="InputR" >
+            <select matNativeControl required>
+                <option value="volvo">tipo Producto1</option>
+                <option value="saab">tipo Producto2</option>
+                <option value="saab">tipo Producto3</option>
+                <option value="saab">tipo Producto4</option>
+              </select>
+              <mat-icon  matSuffix>search</mat-icon>
+              </mat-form-field>
+
+      <h5 id="Descr">Seleccionar en Descr</h5>
+
+    </div>
+
+
+    <div id="inputs">
+      <br>
+
+      
+
+            
+
+
+    </div>
+    <br>
+    <br>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef>
+          <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+            [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+          </mat-checkbox>
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+            [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+          </mat-checkbox>
+        </td>
+      </ng-container>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Weight </th>
+        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+      </tr>
+    </table>
+
+    <mat-spinner class="capa1" *ngIf="mostrar"></mat-spinner>
+
+
+
+
+    
+
+    <div class="buttons">
+      <button mat-icon-button style="color:white; background: #5F6A6A " class="a"  (click)="openDialog()">
+        <mat-icon>note_add</mat-icon>
+    </button>
+    <button mat-icon-button style="color:white; background: #5F6A6A " class="a" (click)="openDialogEliminar()">
+        <mat-icon>delete_sweep</mat-icon>
+    </button>
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>

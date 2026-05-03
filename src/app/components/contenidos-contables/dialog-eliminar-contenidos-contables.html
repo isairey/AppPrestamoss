@@ -1,0 +1,5 @@
+<h2>¿Está seguro de eliminar este dato?</h2>
+<hr>
+<br>
+<button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+<button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Eliminar</button>

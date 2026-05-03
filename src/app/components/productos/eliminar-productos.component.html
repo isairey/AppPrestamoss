@@ -1,0 +1,7 @@
+<form>
+    <h2>¿Seguro de eliminar este producto?</h2>
+    <br>
+    <br>
+<button mat-button (click)="onNoClick()">No</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Si</button>
+</form>

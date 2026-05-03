@@ -1,0 +1,86 @@
+<body  class="example-ripple-container"
+matRipple
+[matRippleCentered]="centered"
+[matRippleDisabled]="disabled"
+[matRippleUnbounded]="unbounded"
+[matRippleRadius]="35"
+[matRippleColor]="color">
+<!-- <mat-toolbar style="cursor:pointer;" onClick="history.back()" class="encabezado" class="color" >Días Inhabiles</mat-toolbar> -->
+
+<mat-card class="centro">
+  <mat-card-title>Días Inhabiles</mat-card-title>
+</mat-card>
+<br>
+<br>
+
+<div class="example-form">
+  <mat-form-field appearance="outline">
+    <mat-label>Buscar</mat-label>
+    <input matInput placeholder="Ingrese el codigo" (keyup)="applyFilter($event.target.value)">
+    <mat-hint>Buscar por codigo</mat-hint>
+  </mat-form-field>
+  <button mat-icon-button>
+    <mat-icon matSuffix>search</mat-icon>
+  </button>
+</div>
+
+<table width="80%" mat-table (click)="imprimir()" [dataSource]="dataSource2" class="centroTabla">
+
+  <!-- Checkbox Column -->
+  <ng-container matColumnDef="select">
+    <th mat-header-cell *matHeaderCellDef>
+      <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+        [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+      </mat-checkbox>
+    </th>
+
+    <td mat-cell *matCellDef="let row">
+      <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row): null; imprimir()"
+        [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)" >
+      </mat-checkbox>
+    </td> 
+  </ng-container>
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="codigo">
+    <th mat-header-cell *matHeaderCellDef> Tipo feriado </th>
+    <td mat-cell *matCellDef="let element"> {{element.tipoFeriado}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="descripcion">
+    <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+    <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="fecha">
+    <th mat-header-cell *matHeaderCellDef> Fecha </th>
+    <td mat-cell *matCellDef="let element"> {{element.fechaFeriado}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+      (click)="selection.toggle(row)">
+  </tr>
+</table>
+  <br>
+  <br>
+  <div class="centro">
+      
+    <button title="home" mat-icon-button style="color:white; background: #5F6A6A; margin-left: 12px" routerLink="home">
+      <mat-icon>home</mat-icon>
+  </button>
+    <button title="Agregar registro" mat-icon-button style="color:white; background: #5F6A6A; margin-left: 12px" (clic)='openDailog()'>
+      <mat-icon>note_add</mat-icon>
+  </button>
+    <button title="Eliminar registro" mat-icon-button style=" color:white;background: #5F6A6A; margin-left: 12px" (click)="openDialogDelete()">
+        <mat-icon>delete_sweep</mat-icon>
+    </button>
+    <button title="Editar registro" mat-icon-button style="color:white;background: #5F6A6A; margin-left: 12px" (click)="openDialogEdit()">
+        <mat-icon>create</mat-icon>
+    </button>
+  </div>
+
+  </body>

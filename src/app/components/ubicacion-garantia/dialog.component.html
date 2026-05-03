@@ -1,0 +1,20 @@
+<form>
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Código</mat-label>
+          <input matInput placeholder="Ingrese el código">
+          <mat-icon matSuffix>done</mat-icon>
+          <mat-hint>Agregar Código</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Descripción</mat-label>
+          <input matInput placeholder="Ingrese la Descripción">
+          <mat-icon matSuffix>done</mat-icon>
+          <mat-hint>Agregar Descripción</mat-hint>
+        </mat-form-field>
+      </p>
+  <button mat-button (click)="onNoClick()">No Thanks!</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</form>

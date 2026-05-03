@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="encabezado">Agregar Sub Estado Prestamo</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>
+    <mat-form-field>
+        <input class="inputAgregar" matInput placeholder="Codigo sub-estado">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar" matInput placeholder="Descripcion">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input class="inputAgregar" matInput placeholder="Equivalente">
+    </mat-form-field>
+  </div>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

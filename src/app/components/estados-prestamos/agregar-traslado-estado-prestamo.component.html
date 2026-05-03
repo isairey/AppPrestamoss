@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="encabezado">Agregar Estado Prestamo</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Estado a traladar">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button>
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Sub-stado a trasladar">
+    </mat-form-field><br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Tipo de traslado">
+    </mat-form-field>
+    <br>
+    Solicitar funcionario: <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">SI</mat-radio-button>
+      <mat-radio-button value="2">NO</mat-radio-button>
+    </mat-radio-group>
+    
+  </div>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

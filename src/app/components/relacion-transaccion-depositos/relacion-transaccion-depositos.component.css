@@ -1,0 +1,173 @@
+#arriba{
+  background: #273746 ;
+  border-radius: 5px;
+  color: white;
+}
+
+#Titulo{
+text-align: center;
+color: #D35400 ;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
+
+
+
+}
+
+#Descr{
+  margin-left: 580px;
+  margin-top: -20px;
+  color: #D35400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#inputs{
+  margin-left: 300px;
+}
+
+#i2{
+  margin-left: 700px;
+  margin-top: 1000
+}
+
+#division1{
+  width: 1000px;
+  margin-top: -1000px;
+}
+
+#p1{
+  width: 300px;
+  margin-left: 120px;
+ 
+
+}
+#p2{
+  width: 250px;
+  margin-left: 40px;
+  
+}
+hr{
+    margin-top: 70px;
+    background: #DC7633    ;
+    height: 1px;
+}
+
+#atras{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+
+table {
+  width: 600px;
+  height: 10px;
+  margin-left: 400px;
+}
+
+th.mat-sort-header-sorted {
+  color: red;
+}
+
+#delete{
+ 
+  color: #515A5A     ; 
+  border-radius: 8px;
+ 
+}
+
+
+#delete:hover{
+ 
+  color: #B2BABB  ; 
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+#iconos1{
+  margin-left: 1210px;
+  height: 10px;
+}
+#iconos2{
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+#back,#door,#arrow,#arrow_left,#add,#table1,#table2{
+  
+  color: white        ;
+}
+
+#back:hover,#door:hover,#arrow:hover,#arrow_left:hover,#add:hover,#table1:hover,#table2:hover{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #B2BABB;
+}
+.mat-elevation-z8{
+margin-left: auto;
+margin: auto
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 200px;
+  margin-left: 540px;
+}
+table {
+  width: 400px;
+  height: 10px;
+  margin-left: 400px;
+}
+
+
+
+
+.example2 {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+.example3 {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+#producto{
+  margin-left: 10px;
+  margin-top: -150px;
+}
+#producto1{
+  margin-left: 20px;
+}
+
+
+
+#Check1{
+  width: 20px;
+  margin-left: 30px;
+}
+.Nombre{
+  color: #D35400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: -10px;
+  margin-left: 560px;
+}
+
+
+    .InputR{
+      color: #5F6A6A;
+      margin-left: 39%;
+
+    }

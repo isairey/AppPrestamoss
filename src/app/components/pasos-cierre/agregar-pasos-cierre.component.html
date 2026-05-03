@@ -1,0 +1,79 @@
+<mat-toolbar class="dialog">Agregar</mat-toolbar>
+
+<form>
+        <table class="busqueda">
+                <tr>
+                  <td>
+                    <p>
+                        <mat-form-field appearance="outline">
+                          <mat-label>No. de Secuencia</mat-label>
+                          <input matInput placeholder="Ingrese el número">
+                          <mat-icon matSuffix>done</mat-icon>
+                          <mat-hint>Agregar Número</mat-hint>
+                        </mat-form-field>
+                      </p>
+                  </td>
+                </tr>
+                <mat-spinner class="capa1" *ngIf="mostrar"></mat-spinner>
+                <tr>
+                        <td>
+                            <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Nombre del programa</mat-label>
+                                <input matInput placeholder="Ingrese el nombre">
+                                <mat-icon matSuffix>done</mat-icon>
+                                <mat-hint>Agregar Nombre</mat-hint>
+                              </mat-form-field>
+                            </p>
+                        </td>
+                      </tr>
+              </table > 
+            
+<table style="margin: auto;" class="letra">
+
+<tr>
+<td><h4>Descripción:  </h4></td>
+<td>
+<mat-form-field>
+    <input matInput placeholder="Input">
+    </mat-form-field>
+</td>
+</tr>       
+<tr>
+<td><h4>Tipo de Frecuencia:  </h4></td>
+<td>
+<mat-form-field>
+        <input matInput placeholder="Input">
+        </mat-form-field>
+</td>
+</tr>
+<tr>
+<td><h4>Fecha Última Corrida:  </h4></td>
+<td>
+    <mat-form-field>
+            <input matInput placeholder="Input">
+            </mat-form-field>
+</td>
+</tr>
+<tr>
+        <td><h4>Fecha Sig. Corrida:  </h4></td>
+        <td>
+            <mat-form-field>
+                    <input matInput placeholder="Input">
+                    </mat-form-field>
+        </td>
+        </tr>
+<tr>
+<td><h4>Estado del programa:  </h4></td>
+<td>
+        <mat-checkbox>Activo   </mat-checkbox>
+        <mat-checkbox>  Inactivo</mat-checkbox>
+</td>
+</tr>
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+</form>

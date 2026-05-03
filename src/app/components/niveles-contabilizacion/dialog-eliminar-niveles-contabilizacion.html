@@ -1,0 +1,35 @@
+<h2>¿Está seguro de eliminar este dato?</h2>
+<hr>
+<br>
+<table>
+    <tr>
+        <td>
+        <mat-form-field>
+                <mat-label>Nivel</mat-label>
+                    <mat-select  required>
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="2">2</mat-option>
+                        <mat-option value="3">3</mat-option>
+                        <mat-option value="4">4</mat-option>
+                    </mat-select>
+                <mat-error>Por favor escoja un nivel</mat-error>
+                <mat-hint></mat-hint>
+                </mat-form-field>
+        </td>
+        <td>
+                <mat-form-field>
+                        <mat-label>Campo</mat-label>
+                          <mat-select  required>
+                              <mat-option value="CACSTS">ESTATUS DEL PRESTAMO </mat-option>
+                              <mat-option value="CAPROD">TIPO DE PRODUCTO  </mat-option>
+                              <mat-option value="CASUBP">PRODUCTOS </mat-option>
+                              <mat-option value="CAAGEN">AGENCIA</mat-option>
+                          </mat-select>
+                      <mat-error>Por favor escoja un Campo</mat-error>
+                      <mat-hint></mat-hint>
+                      </mat-form-field>
+        </td>
+    </tr>
+</table>
+<button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+<button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Eliminar</button>

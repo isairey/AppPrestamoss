@@ -1,0 +1,9 @@
+<mat-toolbar class="encabezado">Eliminar</mat-toolbar>
+<form class="example-form">
+  <h2>¿Está seguro de eliminar este dato?</h2>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button  (click)="onNoClick()">Cancelar</button>
+    <button mat-button  [mat-dialog-close]="data.estatus" cdkFocusInitial>Eliminar</button>
+  </div>

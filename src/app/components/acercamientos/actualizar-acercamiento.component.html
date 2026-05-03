@@ -1,0 +1,22 @@
+<mat-card class="centro"><mat-card-title>Editar</mat-card-title></mat-card>
+<form>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Codigo Acercamiento">
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Descripcion Acercamiento">
+      </mat-form-field>
+      <br>
+      <br>
+      <h2>Confirmar cupo</h2>
+      <mat-radio-group aria-label="Confirmar Cupo">
+        <mat-radio-button value="1">Si</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <br>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Editar</button>
+</form>

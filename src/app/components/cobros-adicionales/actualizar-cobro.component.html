@@ -1,0 +1,281 @@
+<mat-toolbar >Cambios</mat-toolbar>
+<mat-dialog-content>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <h4>Codigo de cobro: </h4>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Introduce el codigo de cobro" [(ngModel)]="data.codigo"
+                            [ngModelOptions]="{standalone: true}">
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Formato impresion: </h4>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Introduce un formato" [(ngModel)]="data.formatoImpresion"
+                            [ngModelOptions]="{standalone: true}">
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Descripcion:</h4>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Introduce el descripcion por Reportes"
+                            [(ngModel)]="data.descripcion" [ngModelOptions]="{standalone: true}">
+                    </mat-form-field>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Poliza Colectiva: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="PolizaColectiva" [(ngModel)]="data.polizaColectiva"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Se usa en finanzas: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="SeUsaEnFinanzas" [(ngModel)]="data.seUsaEnFianza"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Acumula Periodos: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="acumulaPeriodos" [(ngModel)]="data.acumulaPeriodos"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Pagos a terceros: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="pagosAterceros" [(ngModel)]="data.pagosAterceros"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Provisiona: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="provisiona" [(ngModel)]="data.provisiona"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Asocia seguros: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="asociaSeguros" [(ngModel)]="data.asociaSeguros"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Incluye calculo interes: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="incluyeCalculoInteres" [(ngModel)]="data.incluyeCalculoInteres"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Incluye calculo mora: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="incluyeCalculoMora" [(ngModel)]="data.incluyeCalculoMora"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Incluye calculo capital: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="incluyeEnCapital" [(ngModel)]="data.incluyeEnCapital"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Inclusion comprobada: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="inclusionComprobada" [(ngModel)]="data.inclusionComprobada"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Calculo FLAT al vencimiento: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="calculoFlatAlVencimiento" [(ngModel)]="data.calculoFlatAlVencimiento"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+                </td>
+            </tr>        
+    
+            <tr>
+                <td>
+                    <h4>Para calculo de mora: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="paraCalculoDeMora" [(ngModel)]="data.paraCalculoDeMora"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Rep pago tercero: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="repPagoTercero" [(ngModel)]="data.repPagoTercero"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Utiliza codeudor: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="utilizaCodeudor" [(ngModel)]="data.utilizaCodeudor"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Opcion a compra: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="opcionAcompra" [(ngModel)]="data.opcionAcompra"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Utiliza Factor divisor para calcular FLAT: </h4>
+                </td>
+                <td>
+                    <mat-radio-group aria-labelledby="utilizaFactorDivisorParaCalculoFlat" [(ngModel)]="data.utilizaFactorDivisorParaCalculoFlat"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-radio-button style="margin-left: 5px" value="S"> SI </mat-radio-button>
+                        <mat-radio-button style="margin-left: 5px" value="N"> NO </mat-radio-button>
+                    </mat-radio-group>
+    
+    
+                </td>
+            </tr>
+        </table>
+    </form>
+</mat-dialog-content>
+    <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+    <button mat-button [mat-dialog-close]="">Cancelar</button>
+    <button type="submit" mat-button [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>

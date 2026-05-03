@@ -1,0 +1,20 @@
+<mat-toolbar class="encabezado" color="primary"> Agregar Ingenieros Valuadores</mat-toolbar>
+<div mat-dialog-content>
+    <br>
+    <mat-form-field>
+        <input color="primary" matInput placeholder="Codigo">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input color="primary" matInput placeholder="Nombre">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input color="primary" matInput placeholder="Registro">
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

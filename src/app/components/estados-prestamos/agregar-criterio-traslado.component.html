@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="encabezado">Agregar Criterio Traslado</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>    
+    <mat-form-field>
+       <input class="inputAgregar" matInput placeholder="No. Correlativo">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button>
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Campo a comprar">
+    </mat-form-field><br>
+    <mat-form-field>
+       <input class="inputAgregar" matInput placeholder="Comparacion (>,<,=, =>,<=,>=)">
+    </mat-form-field><br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Tipo 2do campo">
+    </mat-form-field>
+    <br>
+    Estado: <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">A(activo)</mat-radio-button>
+      <mat-radio-button value="2">I(inactivo)</mat-radio-button>
+    </mat-radio-group>
+    
+  </div>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+  </div>

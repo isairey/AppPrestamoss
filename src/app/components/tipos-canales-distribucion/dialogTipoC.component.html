@@ -1,0 +1,27 @@
+<mat-card id="arriba">BANCO DE PRUEBA BYTE</mat-card>
+    <h1>Mantenimiento a Canales de Venta</h1>
+    <h2>ALTAS</h2>
+<form style="text-align: center">
+    <mat-form-field>
+      <input class="inputAgregar"  matInput placeholder="Codigo">
+    </mat-form-field>
+<br>
+    <mat-form-field>
+      <input class="inputAgregar"  matInput placeholder="Descripcion">
+    </mat-form-field> 
+<br>    
+    <button style="width: 40px; height: 25px"> </button> 
+    <mat-form-field>
+      <input class="inputAgregar" readonly matInput placeholder="PGM de Datos Adic">
+    </mat-form-field>
+<br>  
+    <mat-form-field>
+      <input class="inputAgregar" readonly matInput placeholder="Archivos de Datos Adic">
+    </mat-form-field>
+</form>  
+  <br>
+  <br>
+
+  
+<button mat-button (click)="onNoClick()">No Thanks</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>

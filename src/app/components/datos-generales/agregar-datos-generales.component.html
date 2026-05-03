@@ -1,0 +1,14 @@
+  <mat-card class="centro"><mat-card-title>Registro de Control</mat-card-title></mat-card>
+<br>
+<br>
+
+            
+  <form style="text-align: center">
+      Numero Automatico de Generacion<br><br>
+      Siguiente Recibo: <mat-form-field>
+        <input class="inputAgregar"  matInput placeholder="Codigo">
+     </mat-form-field>
+  </form>
+<br>
+<button mat-button (click)="onNoClick()">No Thanks</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>

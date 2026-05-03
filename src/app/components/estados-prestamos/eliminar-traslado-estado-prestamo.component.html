@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="encabezado">Eliminar Traslado Estado Prestamo</mat-toolbar>
+<form class="example-form">
+  <h2>¿Está seguro de eliminar este dato?</h2>
+</form>
+<hr>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+    <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Eliminar</button>
+  </div>

@@ -1,0 +1,101 @@
+<mat-toolbar class="dialog">Altas</mat-toolbar>
+
+<form>
+        <table class="busqueda">
+                <tr>
+                        <td><h4>Correlativo de lineas:  </h4></td>
+                        <td>
+                        <mat-form-field>
+                            <input matInput placeholder="Input">
+                            </mat-form-field>
+                        </td>
+                        </tr>  
+                <tr>
+                  <td><h4 class="letra" >Formato de Columna:  </h4></td>
+                  <td>
+                      <p>
+                          <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                              <select matNativeControl required>
+                            <option value="volvo">tipo Producto1</option>
+                          <option value="saab">tipo Producto2</option>
+                          <option value="saab">tipo Producto3</option>
+                          <option value="saab">tipo Producto4</option>
+                          </select>
+                            <mat-icon  matSuffix>search</mat-icon>
+                          </mat-form-field>
+                        </p>
+                  </td>
+                </tr>
+                <mat-spinner class="capa1" *ngIf="mostrar"></mat-spinner>
+                <tr>
+                        <td><h4>Texto de columnas:  </h4></td>
+                        <td>
+                        <mat-form-field>
+                            <input matInput placeholder="Input">
+                            </mat-form-field>
+                        </td>
+                        </tr>  
+                        <tr>
+                                <td><h4 class="letra" >Campo para despliegue:  </h4></td>
+                                <td>
+                                    <p>
+                                        <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                                            <select matNativeControl required>
+                                          <option value="volvo">tipo Producto1</option>
+                                        <option value="saab">tipo Producto2</option>
+                                        <option value="saab">tipo Producto3</option>
+                                        <option value="saab">tipo Producto4</option>
+                                        </select>
+                                          <mat-icon  matSuffix>search</mat-icon>
+                                        </mat-form-field>
+                                      </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                    <td><h4 class="letra" >Formato de Columna:  </h4></td>
+                                    <td>
+                                        <p>
+                                            <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                                                <select matNativeControl required>
+                                              <option value="volvo">tipo Producto1</option>
+                                            <option value="saab">tipo Producto2</option>
+                                            <option value="saab">tipo Producto3</option>
+                                            <option value="saab">tipo Producto4</option>
+                                            </select>
+                                              <mat-icon  matSuffix>search</mat-icon>
+                                            </mat-form-field>
+                                          </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                        <td><h4>Texto de columnas:  </h4></td>
+                                        <td>
+                                        <mat-form-field>
+                                            <input matInput placeholder="Input">
+                                            </mat-form-field>
+                                        </td>
+                                        </tr>  
+                                        <tr>
+                                                <td><h4 class="letra" >Campo para despliegue:  </h4></td>
+                                                <td>
+                                                    <p>
+                                                        <mat-form-field class="letra"  style="width:  300px;"  appearance="outline">
+                                                            <select matNativeControl required>
+                                                          <option value="volvo">tipo Producto1</option>
+                                                        <option value="saab">tipo Producto2</option>
+                                                        <option value="saab">tipo Producto3</option>
+                                                        <option value="saab">tipo Producto4</option>
+                                                        </select>
+                                                          <mat-icon  matSuffix>search</mat-icon>
+                                                        </mat-form-field>
+                                                      </p>
+                                                </td>
+                                              </tr>
+              </table > 
+            
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+</form>

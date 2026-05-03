@@ -1,0 +1,45 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center
+  }
+  
+  .buttons{
+    margin: 0 auto; 
+    width: 300px;
+    padding: 25px 0;
+    text-align: center
+  }
+  
+  .a{
+    margin: 5px; 
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  table {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .inputAgregar{
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .encabezado{
+    background: #273746
+  }
+  
+  .table{
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+  }
+    
+  #select{
+    width: 80%
+  }

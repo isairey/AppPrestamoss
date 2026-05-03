@@ -1,0 +1,36 @@
+.Card{
+    text-align: center;
+    font-family: 'Times New Roman';
+    }
+    
+    .example-form {
+        min-width: 100px;
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+        left: 40%;
+      }
+      
+      .example-full-width {
+        width: 100%;
+      }
+    
+      table{
+        position: relative;
+        left: 36%;
+        width: 30%;
+      }
+    
+      mat-card mat-card-title{
+        text-align: center;
+      }
+    
+      #iconos2 p {
+        text-align: center;
+      }
+    
+      #iconos{
+        text-align: center;
+      }
+
+     

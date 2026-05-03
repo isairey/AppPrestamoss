@@ -1,0 +1,25 @@
+<mat-toolbar class="dialog">Agregar</mat-toolbar>
+<br><br>
+<form>
+
+            
+<table style="margin: auto;" class="letra">
+
+
+<tr>
+<td><h4>Elija una opcion:  </h4></td>
+<td>
+        <mat-checkbox>Archivos Parametrización</mat-checkbox><br>
+        <mat-checkbox>Archivos Generales</mat-checkbox><br>
+        <mat-checkbox>Todos los archivos</mat-checkbox>
+        
+</td>
+</tr>
+
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Borrar</button>
+</form>

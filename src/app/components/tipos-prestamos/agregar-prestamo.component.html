@@ -1,0 +1,21 @@
+
+  <mat-card class="centro"><mat-card-title>Altas</mat-card-title></mat-card>
+<br>
+<br>
+<form style="text-align: center">
+  <mat-form-field>
+    <input class="inputAgregar"  matInput placeholder="Codigo">
+  </mat-form-field>
+<br>
+  <mat-form-field>
+    <input class="inputAgregar"  matInput placeholder="Descripcion">
+  </mat-form-field> 
+<br>    
+  <mat-form-field>
+    <input class="inputAgregar" matInput placeholder="Tipo Activo Credictivo">
+  </mat-form-field>(Equivalencia CNBS)
+</form>  
+<br>
+<br>
+<button mat-button (click)="onNoClick()">No Thanks</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>

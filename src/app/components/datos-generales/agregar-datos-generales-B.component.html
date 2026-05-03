@@ -1,0 +1,28 @@
+<mat-toolbar class="dialog">Fechas del Sistema</mat-toolbar>
+
+<form>
+<h4>Fecha Anterior:</h4>
+    <mat-form-field>
+        <input matInput [matDatepicker]="pickerFechaAnterior" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="pickerFechaAnterior"></mat-datepicker-toggle>
+        <mat-datepicker #pickerFechaAnterior></mat-datepicker>
+      </mat-form-field>
+      <br>
+      <br>
+    <h4>Fecha Vigente del sistema:</h4>
+        <mat-form-field>
+                <input matInput [matDatepicker]="pickerFechaVigencia" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="pickerFechaVigencia"></mat-datepicker-toggle>
+                <mat-datepicker #pickerFechaVigencia></mat-datepicker>
+              </mat-form-field><- Cierre diario
+              <br>
+              <br>
+        <h4>Siguiente Fecha :  </h4>
+            <mat-form-field>
+                <input matInput [matDatepicker]="pickerSiguienteFecha" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="pickerSiguienteFecha"></mat-datepicker-toggle>
+                <mat-datepicker #pickerSiguienteFecha></mat-datepicker>
+              </mat-form-field>         
+</form>
+<button mat-button [mat-dialog-close]="">Cancelar</button>
+<button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>

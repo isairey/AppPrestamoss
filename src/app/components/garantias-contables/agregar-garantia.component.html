@@ -1,0 +1,30 @@
+
+  <br>
+  <mat-card class="centro"><mat-card-title>Altas</mat-card-title></mat-card>
+<br>
+<br>
+<table class="centro">
+  
+        <p>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Introduce el Codigo">
+          </mat-form-field>
+        <br>
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Descripcion"></textarea>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Equivalencia CNBS"></textarea>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Ultimo Correlativo Asignado"></textarea>
+          </mat-form-field>
+          </p>
+ 
+</table > 
+<br>
+
+<button mat-stroked-button [mat-dialog-close]="" >Cancel</button>
+<button mat-stroked-button [mat-dialog-close]="data.animal" cdkFocusInitial >Ok</button>

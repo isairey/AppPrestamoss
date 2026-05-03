@@ -1,0 +1,26 @@
+<form>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Codigo Producto">
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Descripcion Producto">
+      </mat-form-field>
+      <br>
+      <br>
+      <div class="eleccion">
+      <mat-form-field>
+        <mat-select placeholder="Tipo Califica">
+          <mat-option value="si">Si</mat-option>
+          <mat-option value="no">No</mat-option>
+          <mat-option value="talvez">Talvez</mat-option>
+          <mat-option value="talvez-no">Talvez No</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+      <br>
+      <br>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</form>

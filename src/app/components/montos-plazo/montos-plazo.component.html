@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Montos Por Plazo</title>
+  </head>
+  <body>
+      <!-- <mat-toolbar class="encabezado" color="primary">Montos por Plazo</mat-toolbar> -->
+      
+      <div class="example-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Buscar</mat-label>
+          <input matInput placeholder="Ingrese el codigo" (keyup)="applyFilter($event.target.value)">    
+          <mat-hint>Buscar estado</mat-hint>
+        </mat-form-field>
+          <button mat-icon-button>
+            <mat-icon matSuffix>search</mat-icon>
+          </button>                 
+        </div>  
+        <br>
+        <br>
+        
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select">
+          <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="$event ? masterToggle() : null"
+                          [checked]="selection.hasValue() && isAllSelected()"
+                          [indeterminate]="selection.hasValue() && !isAllSelected()"
+                          [aria-label]="checkboxLabel()">
+            </mat-checkbox>
+          </th>
+          <td mat-cell *matCellDef="let row">
+            <mat-checkbox (click)="$event.stopPropagation()"
+                          (change)="$event ? selection.toggle(row) : null"
+                          [checked]="selection.isSelected(row)"
+                          [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+          </td>
+        </ng-container>
+      
+        <!-- Codigo Column -->
+        <ng-container matColumnDef="codigo">
+          <th mat-header-cell *matHeaderCellDef> Codigo </th>
+          <td mat-cell *matCellDef="let element"> {{element.codigo}} </td>
+        </ng-container>
+      
+        <!-- Valor Minimo Column -->
+        <ng-container matColumnDef="valorMinimo">
+          <th mat-header-cell *matHeaderCellDef> Valor Minimo </th>
+          <td mat-cell *matCellDef="let element"> {{element.valorMinimo}} </td>
+        </ng-container>
+      
+        <!-- Valor Maximo Column -->
+        <ng-container matColumnDef="valorMaximo">
+          <th mat-header-cell *matHeaderCellDef> Valor Maximo </th>
+          <td mat-cell *matCellDef="let element"> {{element.valorMaximo}} </td>
+        </ng-container>
+
+        <!-- Plazo Column -->
+        <ng-container matColumnDef="plazo">
+            <th mat-header-cell *matHeaderCellDef> Plazo </th>
+            <td mat-cell *matCellDef="let element"> {{element.plazo}} </td>
+          </ng-container>
+
+          <!-- Tasa Column -->
+        <ng-container matColumnDef="tasa">
+            <th mat-header-cell *matHeaderCellDef> Tasa </th>
+            <td mat-cell *matCellDef="let element"> {{element.tasa}} </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+            (click)="selection.toggle(row)">
+        </tr>
+      </table>
+      <br>
+        <br>
+        <div class="buttons">
+          <mat-spinner *ngIf="showSpinner"></mat-spinner>
+            <button mat-icon-button style="color:white; background: #5F6A6A " class="a" routerLink="home">
+                <mat-icon>home</mat-icon>
+            </button>                        
+            <button mat-icon-button style="color:white; background: #5F6A6A " class="a">
+                <mat-icon>help</mat-icon>
+            </button>                      
+        </div>
+  </body>
+</html>

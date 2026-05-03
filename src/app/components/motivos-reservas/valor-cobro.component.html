@@ -1,0 +1,28 @@
+<mat-toolbar color="primary" class="encabezado">Valor de Cobro</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Motivo">
+    </mat-form-field>
+    <br>
+    <div class="example-form">
+        <mat-form-field appearance="outline">          
+          <input matInput placeholder="">              
+        </mat-form-field>                
+    </div>  
+    <br>
+  </div>
+</form>
+<hr>
+<br>
+<div class="buttons">
+    <button mat-icon-button style="color:white; background: #5F6A6A " class="a" routerLink="home">
+        <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button style="color:white; background: #5F6A6A " class="a" (click)="openDialogAddCobro()">
+        <mat-icon>note_add</mat-icon>
+    </button>
+    <button mat-icon-button style="color:white; background: #5F6A6A " class="a" (click)="openDialogEliminarCobro()">
+        <mat-icon>delete_sweep</mat-icon>
+    </button>
+</div>

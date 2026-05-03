@@ -1,0 +1,36 @@
+<mat-toolbar class="encabezado">Mantenimiento a Usuairos por Autorizacion <br> ALTAS</mat-toolbar>
+<form class="example-form">
+  <div mat-dialog-content>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Usuairo">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button>
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Categoria">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Agencia Asignada">
+    </mat-form-field>
+    <br>
+    <button style="width: 10px; height: 25px"> </button> 
+    <mat-form-field>
+        <input class="inputAgregar" readonly matInput placeholder="Acesor de prestamos">
+    </mat-form-field>
+    <br>
+    Todas las Agencias: <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">SI</mat-radio-button>
+      <mat-radio-button value="2">NO</mat-radio-button>
+    </mat-radio-group>
+    
+  </div>
+</form>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-button [mat-dialog-close]="data.estatus" cdkFocusInitial>Guardar</button>
+  </div>
+  
+  

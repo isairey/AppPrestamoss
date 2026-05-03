@@ -1,0 +1,61 @@
+ng g m modules/almacenadora --routing
+ng g c modules/almacenadora
+
+ng g m modules/aseguradora --routing
+ng g c modules/aseguradora
+
+ng g m modules/categoriasSib --routing
+ng g c modules/categorias-sib
+
+ng g m modules/cobrosAdicionales --routing
+ng g c modules/cobros-adicionales
+
+ng g m modules/destinos --routing
+ng g c modules/destinos
+
+ng g m modules/diasInhabiles --routing
+ng g c modules/dias-inhabiles
+
+ng g m modules/estatusAvaluos --routing
+ng g c modules/estatus-avaluos
+
+ng g m modules/estatusGarantiaReal --routing
+ng g c modules/estatus-garantia-real
+
+ng g m modules/formasDesembolso --routing
+ng g c modules/formas-desembolso
+
+ng g m modules/formasPago --routing
+ng g c modules/formas-pago
+
+ng g m modules/instancia --routing
+ng g c modules/instancia
+
+ng g m modules/institucionesCobrosAdicionales --routing
+ng g c modules/instituciones-cobros-adicionales
+
+ng g m modules/lugaresInversion --routing
+ng g c modules/lugares-inversion
+
+ng g m modules/mediosContacto --routing
+ng g c modules/medios-contacto
+
+ng g m modules/motivosAjuste --routing
+ng g c modules/motivos-ajuste
+
+ng g m modules/notarios --routing
+ng g c modules/notarios
+
+ng g m modules/origenFondos --routing
+ng g c modules/origen-fondos
+
+ng g m modules/poder --routing
+ng g c modules/poder
+
+ng g m modules/supervisor --routing
+ng g c modules/supervisor
+
+ng g m modules/sidenav --routing
+ng g c modules/sidenav
+
+

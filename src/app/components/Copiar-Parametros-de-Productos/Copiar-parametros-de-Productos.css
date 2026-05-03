@@ -1,0 +1,254 @@
+
+#arriba{
+    background: #273746 ;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+   
+  }
+  
+  #Titulo{
+  text-align: center;
+  color: #D35400 ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  
+  
+  
+  }
+  
+  #Descr{
+    margin-left: 580px;
+    margin-top: -20px;
+    color: #D35400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #inputs{
+    margin-left: 300px;
+  }
+  
+  #i2{
+    margin-left: 700px;
+    margin-top: 1000
+  }
+  
+  #division1{
+    width: 1000px;
+    margin-top: -1000px;
+  }
+  
+  #p1{
+    width: 300px;
+    margin-left: 120px;
+   
+  
+  }
+  #p2{
+    width: 250px;
+    margin-left: 40px;
+    
+  }
+  hr{
+      margin-top: 180px;
+      background: #DC7633    ;
+      height: 1px;
+  }
+  
+  #atras{
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      margin-top: 3px;
+  }
+  
+  
+  table {
+    width: 600px;
+    height: 10px;
+    margin-left: 400px;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: red;
+  }
+  
+  #delete{
+   
+    color: #515A5A     ; 
+    border-radius: 8px;
+   
+  }
+  
+  
+  #delete:hover{
+   
+    color: #B2BABB  ; 
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  
+  #iconos1{
+    margin-left: 1210px;
+    height: 10px;
+  }
+  #iconos2{
+    margin-left: 500px;
+    margin-top: -11px;
+   
+  }
+  #iconos3{
+    margin: auto;
+   
+  }
+  
+  #back,#door,#arrow,#arrow_left,#add,#table1,#table2{
+    
+    color: beige;
+  }
+  
+  #back:hover,#door:hover,#arrow:hover,#arrow_left:hover,#add:hover,#table1:hover,#table2:hover{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #B2BABB;
+  }
+  .mat-elevation-z8{
+  margin-left: auto;
+  margin: auto
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 200px;
+    margin-left: 540px;
+  }
+  table {
+    width: 400px;
+    height: 10px;
+    margin-left: 400px;
+  }
+  
+  
+  
+  
+  .example2 {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  
+  .example3 {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  
+  #producto{
+    margin-left: 10px;
+    margin-top: -150px;
+  }
+  #producto1{
+    margin-left: 20px;
+  }
+  
+  
+  
+  #Check1{
+    width: 20px;
+    margin-top: -100px;
+    margin-left: 30px;
+    border: #DC7633 2px solid;
+  }
+  .Nombre{
+    color: #D35400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -10px;
+    margin-left: 560px;
+  }
+  .Input1{
+  color: #5F6A6A;
+  margin-left: 30px;
+  }
+  
+  .Input1-1{
+    color: #5F6A6A;
+    width: 50px;
+  
+    }
+    .Input1-2{
+      color: #5F6A6A;
+      width: 50px;
+      margin-left: 20px;
+      
+      }
+  
+      .InputF{
+        color: #5F6A6A;
+        width: 140px;
+        height: 30px;
+  
+      }
+      .InputA{
+        color: #5F6A6A;
+        width: 20PX;
+        margin-left: 40PX;
+        margin-top: -15px;
+        border: #F1C40F 2px solid;
+        
+  
+      }
+      #Si{
+        margin-left: 100px;
+        margin-top: -23px;
+      }
+
+      .InputR{
+        color: #5F6A6A;
+        margin-left: 50px;
+        width: 190px;
+        height: 70px;
+        margin-top: -50px;
+  
+      }
+      .InputL{
+        color: #5F6A6A;
+        margin-left: 28px;
+        width: 20px;
+        border: #F1C40F 2px solid;
+  
+      }
+
+
+      .DivInput{
+        margin: auto;
+       
+      }
+
+      h4{
+       margin-left: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+  }
+      .S{
+        margin-left: 20px;
+      }
+      .CopiaDatos{
+        margin-left: 700px;
+        margin-top: -300px;
+      }
+
+      .Datos{
+        height: 10px;
+        margin-left: 140px;
+        margin-top: -40px;
+      }
+

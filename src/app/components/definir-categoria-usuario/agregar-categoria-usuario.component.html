@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <mat-toolbar class="encabezado" color="primary">Agregar Categoria Usuario</mat-toolbar>
+        <form>
+        <br>
+        <br>
+            <div>               
+                <mat-form-field class="example-full-width">
+                        <input color="primary" matInput placeholder="Codigo">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width">
+                        <input color="primary" matInput placeholder="Descripcion">
+                </mat-form-field>
+            </div>
+        </form>       
+        <br>
+        <br>    
+        <mat-divider> </mat-divider>
+        <div mat-dialog-actions>
+            <button mat-button color="primary" (click)="onNoClick()">Cancelar</button>
+            <button mat-button color="primary" [mat-dialog-close]="data.estatus" cdkFocusInitial>Agregar</button>
+        </div>
+    </body> 
+</html>
+

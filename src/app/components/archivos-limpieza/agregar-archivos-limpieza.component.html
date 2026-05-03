@@ -1,0 +1,56 @@
+<mat-toolbar class="dialog">Agregar</mat-toolbar>
+
+<form>
+        <table class="busqueda">
+                <tr>
+                  <td>
+                    <p>
+                        <mat-form-field appearance="outline">
+                          <mat-label>Archivo</mat-label>
+                          <input matInput placeholder="Ingrese el Archivo">
+                          <mat-icon matSuffix>done</mat-icon>
+                          <mat-hint>Agregar Archivo</mat-hint>
+                        </mat-form-field>
+                      </p>
+                  </td>
+                </tr>
+                <mat-spinner class="capa1" *ngIf="mostrar"></mat-spinner>
+                <tr>
+                        <td>
+                            <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Descripción</mat-label>
+                                <input matInput placeholder="Ingrese la Descripción">
+                                <mat-icon matSuffix>done</mat-icon>
+                                <mat-hint>Agregar Descripción</mat-hint>
+                              </mat-form-field>
+                            </p>
+                        </td>
+                      </tr>
+              </table > 
+            
+<table style="margin: auto;" class="letra">
+
+
+<tr>
+<td><h4>Usa Express:  </h4></td>
+<td>
+        <mat-checkbox>Si   .</mat-checkbox>
+        <mat-checkbox>  No</mat-checkbox>
+</td>
+</tr>
+
+<tr>
+    <td><h4>Parametrización/General:  </h4></td>
+    <td>
+            <mat-checkbox>P   .</mat-checkbox>
+            <mat-checkbox>  G</mat-checkbox>
+    </td>
+    </tr>
+</table > 
+
+     
+         <!--<button mat-button (click)="onNoClick()">Cancelar</button>-->
+         <button mat-button [mat-dialog-close]="">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+</form>
